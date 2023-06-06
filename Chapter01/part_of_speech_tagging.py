@@ -6,8 +6,8 @@ nlp = spacy.load("en_core_web_sm")
 def pos_tagging(text):
     doc = nlp(text)
     for token in doc:
-        print("Token: %s, Coarse-grained POS-Tag: %s" % (token.text, token.pos_))
-        print("Token: %s, Fine-grained POS-Tag: %s" % (token.text, token.tag_))
+        print(f"Token: {token.text}, Coarse-grained POS-Tag: {token.pos_}")
+        print(f"Token: {token.text}, Fine-grained POS-Tag: {token.tag_}")
         print("--")
 
 
